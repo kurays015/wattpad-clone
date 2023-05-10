@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wattpad - Where stories live</title>
+  <link rel="icon" type="image/png/gif/svg" href="//static.wattpad.com/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+  <link rel="stylesheet" href="responsive.css">
+  <style>
+  .swiper-pagination-bullet {
+    width: 60px;
+    height: 10px;
+    background-color: #ff6122;
+    opacity: .5;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 0;
+}
+  .swiper-pagination-bullet-active {
+    opacity: 1;
+}
+  </style>
+  </head>
+  <body id="body"> 
+    <header>
+    <!--Responsive Part Starts-->
+      <div class="responsive-nav">
+        <ul class="ul-container">
+          <li class="flex1">
+            <a href=""> <img class="W-logo" src="img/wattpad-res-logo.png"> </a>
+          </li>
+          <li class="flex2">
+            <a href=""> Browse 
+              <span class="caret-logo"><i style="text-decoration: none; margin-left: 5px;" class="fa-solid fa-caret-down"></i></span> 
+            </a>
+          </li>
+          <li class="flex1">
+            <a href="">   
+              <i  class="fa-solid fa-magnifying-glass display-none-search-logo" ></i>
+            </a>       
+          </li>
+          <li class="flex1">
+            <a href="">
+              <img src="/Learned/img/profile logo.png" class="profile-gray-logo">
+            </a>        
+          </li>
+        </ul>
+      </div>
+    <!--Responsive Part Ends-->
+      <nav class="my-nav">   
+        <div class="logo-container">
+          <img src="img/wattpadlogo.png" class="logo">
+        </div>
+        <ul>
+          <li class="dropdown res-browse"> 
+            <a href="#" id="browse-button">Browse</a>           
+            <span class="caret-logo"><i style="text-decoration: none;" class="fa-solid fa-caret-down"></i></span>              
+          </li>  
+          <li class="dropdown" id="nav-displaynone"> 
+            <a href="#" id="writer-button">Writer Opportunities</a>
+            <span class="caret-logo"><i style="text-decoration: none;" class="fa-solid fa-caret-down"></i></span> 
+          </li>
+          <li class="dropdown" id="nav-displaynone"> 
+            <a href="#" id="community-button">Community</a> 
+            <span class="caret-logo"><i style="text-decoration: none;" class="fa-solid fa-caret-down"></i></span>
+          </li>
+          <li id="nav-displaynone"> 
+            <a href="#">
+              <i  class="fa-solid fa-magnifying-glass search-logo" ></i>
+              <input class="search-input" type="search" placeholder="Search">
+            </a> 
+          </li>
+        </ul>
+        <ul class="login">
+          <li id="nav-displaynone"> 
+            <a href="#" class="login-button">Log in</a> 
+          </li>
+          <li class="dropdown" id="nav-displaynone"> <a href="#" class="language-button">English</a> 
+            <span class="caret-logo"><i style="text-decoration: none;" class="fa-solid fa-caret-down"></i></span>
+          </li>
+        </ul>
+      </nav>
+      <ul class="dropdown-content">
+        <li style="padding: 6px 0px 14px; font-size: 14px; font-weight: 600;text-transform: uppercase; color: rgb  (111, 111, 111);">Browse</li>
+          <div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Paid Stories</a> </li>           
+              <li> <a href="">Historical Fiction</a> </li>           
+              <li> <a href="">Poetry</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Editor's Picks</a> </li>           
+              <li> <a href="">Horror</a> </li>           
+              <li> <a href="">Romance</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">The Wattys</a> </li>           
+              <li> <a href="">Humor</a> </li>           
+              <li> <a href="">Science Fiction</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Adventure</a> </li>           
+              <li> <a href="">LGBTQ+</a> </li>           
+              <li> <a href="">Short Story</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Contemporary Lit</a> </li>           
+              <li> <a href="">Mystery</a> </li>           
+              <li> <a href="">Teen Fiction</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Diverse Lit</a> </li>           
+              <li> <a href="">New Adult</a> </li>           
+              <li> <a href="">Thriller</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Fanfliction</a> </li>           
+              <li> <a href="">Non-Fiction</a> </li>           
+              <li> <a href="">Werewolf</a> </li>                      
+            </div>
+            <div class="dropdown-first-container">
+              <li> <a href="">Fantasy</a> </li>           
+              <li> <a href="">Paranormal</a> </li>                       
+            </div>
+
+            <div class="dropdown-second-container">
+              <div class="wattpad-picks">WATTPAD PICKS</div>
+              <li class="choices"> <a href="">From our Creators</a> </li>
+              <li class="choices"> <a href="">Editor's Choice</a> </li>
+              <li class="choices"> <a href="">Fight the Blues: ...</a> </li>
+              <li class="choices"> <a href="">Marathon Reading</a> </li>
+              <li class="choices"> <a href="">Wattpad Studios ...</a> </li>
+            </div>         
+          </div>            
+        </ul> 
+        <ul class="dropdown-content2">
+            <div class="writer-dropdown">
+              <li> <a href="">Writer Resources</a> </li>           
+              <li> <a href="">Writer Programs</a> </li>           
+              <li> <a href="">Writer Contests</a> </li>                      
+            </div> 
+        </ul>
+        <ul class="dropdown-content3">
+            <div class="writer-dropdown">
+              <li> <a href="">The Wattys</a> </li>           
+              <li> <a href="">Community Happenings</a> </li>           
+              <li> <a href="">Wattpad Ambassadors</a> </li>                      
+            </div> 
+        </ul>
+        <ul class="dropdown-content4">
+            <div class="language-dropdown">
+              <li> <a href="">English</a> </li>           
+              <li> <a href="">Français</a> </li>           
+              <li> <a href="">Italiano</a> </li>                                         
+              <li> <a href="">Deutsch</a> </li>                                         
+            </div> 
+            <div class="language-dropdown">
+              <li> <a href="">Español</a> </li>           
+              <li> <a href="">Português</a> </li>           
+              <li> <a href="">Català</a> </li>                                         
+              <li> <a href="">Tiếng Việt</a> </li>                                         
+            </div> 
+            <div class="language-dropdown">
+              <li> <a href="">Filipino</a> </li>           
+              <li> <a href="">Bahasa Indonesia</a> </li>           
+              <li> <a href="">Русский</a> </li>                                         
+              <li> <a href="">Română</a> </li>                                         
+            </div> 
+            <div class="language-dropdown">
+              <li> <a href="">Türkçe</a> </li>           
+              <li> <a href="">Česky</a> </li>           
+              <li> <a href="">Polski</a> </li>                                         
+              <li> <a href="">Magyar</a> </li>                                         
+            </div> 
+            <div class="language-dropdown">
+              <li> <a href="">ελληνικά</a> </li>           
+              <li> <a href="">Slovenčina</a> </li>           
+              <li> <a href="">Українська</a> </li>                                         
+              <li> <a href="">Svenska</a> </li>                                         
+            </div> 
+            <div class="language-dropdown">
+              <li> <a href="">Svenska</a> </li>           
+              <li> <a href="">Dansk</a> </li>           
+              <li> <a href="">Nederlands</a> </li>                                         
+              <li> <a href="">简体中文</a> </li>                                         
+            </div> 
+            <div class="language-dropdown">
+              <li> <a href="">繁體中文</a> </li>           
+              <li> <a href="">العربية</a> </li>           
+              <li> <a href="">עברית</a> </li>                                         
+              <li> <a href=""> हिन्दी </a> </li>                                         
+            </div> 
+        </ul>
+    </header>
+    <main>
+      <!--Responsive Part Starts-->
+      <div class="responsive-container">
+        <div class="res-headline">
+          <img src="img/wattpadlogo.png" class="headline-logo">
+          <p>Where stories live</p>
+        </div>
+        <div class="sign-up-form">
+          <h1>Join Wattpad</h1>
+          <p class="sub">Be part of a global communtiy of readers and writers, all connected through the power of story.</p>
+          <div class="panel-body">
+            <button style="background-color: #3b5998; color: #fff; border: none;">
+              <i class="fa-brands fa-facebook-f"></i>
+              Sign up with Facebook
+            </button>
+            <button style="background-color: #fff; border:1px solid black;"> 
+              <img src="img/google_login_color.png" width="24px">
+              Sign up with Google
+            </button>
+            <div class="OR3" style="display: flex;">
+              <hr>
+              OR
+              <hr>
+            </div>
+            <button style="background-color: #222; border: none; color: #fff;">Sign up with Email</button>
+            <p style="margin-top: 16px; font-size: 12px;">If you already have an account, <span style="color: #2a1c60; font-weight: 600;">Log in.</span> </p>
+            <p style="margin:26px 0px 16px; font-size: 12px; color: rgb(148, 145, 145);">By continuing, you agree to Wattpad's 
+              <span style="color: #2a1c60; font-weight: 600;">Terms of Service</span> and <br>
+              <span style="color: #2a1c60; font-weight: 600;">Privacy Policy</span>
+            </p>
+          </div>        
+        </div>
+      </div>
+      <div class="row-pic">
+        <h3>Take Wattpad With You</h3>
+        <div>
+          <img src="https://www.wattpad.com/img/homepages/appstore_dark.png" width="150px"
+          style="padding-bottom: 10px;" >
+          <img src="https://www.wattpad.com/img/homepages/googleplay/en.png" width="150px" style="height:80px; padding-top: 15px;">
+        </div>
+        <div class="footer-devicess-container">
+          <img class="footer-devicess" src="/Learned/img/device-mockups-footer.png">
+        </div>
+      </div>
+      <footer class="display-none-footer" style="text-align: center;">
+        <div>
+          <div class="socials">
+            <img src="https://static.wattpad.com/img/social-media/facebook.svg?v=2fa216f">
+            <img src="https://static.wattpad.com/img/social-media/twitter.svg?v=beeb323">
+            <img src="https://static.wattpad.com/img/social-media/instagram.svg?v=f51d790">
+            <img src="https://static.wattpad.com/img/social-media/instagram.svg?v=f51d790">
+            <img src="https://static.wattpad.com/img/social-media/tiktok.svg?v=0704387">
+          </div> 
+          <div style="display: flex; ">
+            <div class="display-none-links">
+              <h5 style="font-size: 16px; font-weight: 500;">Links</h5>
+              <a href="">Paid Stories</a>
+              <a href="">Try Premium</a>
+              <a href="">Business</a>
+              <a href="">Jobs</a>
+              <a href="">Press</a>
+              <a href="">Terms</a>
+              <a href="">Privacy</a>
+              <a href="">Help</a>  
+            </div>
+            <div class="lang-container">
+              <h5 style="font-size: 14px; font-weight: 500; text-align: start; margin: 12px 0px;">Site Language</h5>
+              <select>
+                <option>English</option>
+                <option>Français</option>
+                <option>Italiano</option>
+                <option>Español</option>
+                <option>Português</option>
+                <option>Català</option>
+                <option>Tiếng Việt</option>
+                <option>Filipino</option>
+                <option>Bahasa Indonesia</option>
+                <option>Русский</option>
+                <option>Română</option>
+              </select>
+            </div>
+          </div>
+          <p style="text-align: start; margin-left: 60px; font-size: 14px;">© 2023 Wattpad</p>
+        </div>
+      </footer>
+      <!--Responsive Part Ends-->
+
+
+
+
+
+
+
+
+
+
+      <section class="content-container">
+        <h2>Hi, we're Wattpad.</h2>
+        <h3>The world's most-loved social storytelling platform</h3>
+        <h4>Wattpad connects a global community of 90 million readers and writers through the power of story.</h4>
+        <button class="button1">Start Reading</button>
+        <button class="button2">Start Writing</button>
+        <div class="pop-up-background">     
+          <div class="popup-container">
+            <i class="fa-solid fa-xmark exit-button"></i>
+            <div>
+                <h1>Join Wattpad</h1>
+              <p class="p1">
+                Be part of a global community of readers and writers, all connected through the power of story.
+              </p>
+              <div class="bottom-container">
+                <div class="popup-buttons-container">
+                  <button class="facebook-login">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    Sign up with Facebook
+                  </button>
+                  <button class="google-login">                 
+                    <img src="img/google_login_color.png" alt="google-logo">
+                    Sign up with Google
+                  </button>
+                  <div class="OR">
+                    <hr>
+                    OR
+                    <hr>
+                  </div>
+                  <button class="google-signup">Sign up with Email</button>
+                </div>                   
+                <p class="p2">If you already have account, <span>Log in.</span></p>
+                <p class="p3">By continuing, you agree to Wattpad's <span>Terms of Service</span> and <span>Privacy Policy.</span></p>
+              </div>
+            </div> 
+          </div>
+          <!-- dito linya pababa -->        
+        </div>
+        <div class="popup-container2">
+          <i class="fa-solid fa-xmark" id="exitButton2"></i>
+          <h1>Log in to Wattpad</h1>
+          <div class="popup-buttons-container2">
+            <button class="facebook-login2">
+              <i class="fa-brands fa-facebook-f"></i>
+              Log in with Facebook
+            </button>
+            <button class="google-login2">                 
+              <img src="img/google_login_color.png" alt="google-logo">
+              Log in With Google
+            </button>
+            <div class="OR2">
+              <div></div>
+              <span>OR</span>
+              <div></div>
+            </div>
+            <button class="google-signup2">Log in</button>
+            <div class="forgot-password-container">
+              <a href="" class="forgot-password">Forgot password?</a>
+            </div>
+          </div>   
+          <div class="dont-haveacc">
+            <p>Don't have an account? <span>Sign up</span></p>
+          </div>     
+        </div>
+        <img src="img/wattpadimg1.png" alt="wattpad-overview" class="wattpad-image1">   
+      </section>
+      <section class="section">
+        <div class="see-your-story-container">
+          <h3>See Your Story...</h3>
+          <div class="icons-withtext-container">
+            <div>
+              <img src="img/tv-icon.svg">
+              <div>Get produced to movie or film</div>
+            </div>
+            <div>
+              <img src="img/reel-icon.svg">
+              <div>Get adapted to a TV series</div>       
+            </div>
+            <div>
+              <img src="img/book-icon.svg">
+              <div>Get published</div> 
+            </div>
+          </div>      
+        </div>
+        <div class="wattpad-studios-container">
+          <img src="img/wattpadStudiosPoster.png" class="poster-img">
+          <div>
+            <img src="img/wattpadStudiosLogo.svg" class="wattpad-studio-img">
+            <h3>Your original story could be the next big hit</h3>
+            <p style="margin-bottom: 22px; max-width: 420px;">Wattpad Studios discovers untapped, unsigned, and talented writers on Wattpad and connects them to global multi-media entertainment companies.</p>
+            <p style="margin-bottom: 22px; max-width: 400px;">Wattpad Studios works with partners such as:</p>
+            <img src="img/sony.svg" alt="sony" class="partners">
+            <img src="img/hulu.svg" alt="hulu" class="partners">
+            <img src="img/syfy.svg" alt="syfy" class="partners">         
+          </div>
+        </div>
+        <div class="wattpad-book-container">
+          <div>
+            <img src="img/wattpadBooksLogo.svg">
+            <h3>Your voicebelongs on bookshelves</h3>
+            <p style="margin: 0px 0px 22px 60px;">Wattpad Books aspires to recognize and reflect drivers voices by taking Wattpad stories to published book and onto bookshelves around the world.</p>
+            <p style="margin-bottom: 22px;">Wattpad Books works with partners such as:</p>
+            <img src="img/macmillan.png" width="110" class="partners2">
+            <img src="img/anvil.png" width="87" class="partners2">
+            <img src="img/penguin.png" width="97" class="partners2">
+          </div>
+          <img src="img/wattpadBooksPoster.png" width="348" alt="Watpadd Books">    
+        </div>
+        <div class="link">
+          <a href="https://creators.wattpad.com/" target="_blank">
+            <h4>
+              Find out more about what we do for writers→
+            </h4>
+          </a>
+        </div>
+      </section>
+      <section class="how-wattpad-works">
+        <div class="margin">
+          <h2 style="margin: 24px 0px 30px;">How Wattpad Works</h2>
+          <p style="text-align: center; margin: 0px 0px 55px; font-size: 14px;">Get your story discovered through the power of community and technology on Wattpad.</p>
+          <div class="whole-container-of-three">
+            <div class="one-container">
+              <div class="small-container">
+                <h2 class="h2-100px">1</h2>
+                <div class="title-and-paragraph-container">
+                  <h3 class="title">Create</h3> 
+                  <p style="color: #6f6f6f;">Share your unique voice and original story on Wattpad. Find the writing resources you need to craft a story only you can tell.</p>
+                </div>             
+              </div>
+              <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="orange-img">
+                <div>
+                  <div class="numbers">50+</div>
+                  <div class="type">Writing Resources</div>
+                </div>
+              </div>       
+            </div>
+            <div class="one-container"">
+              <div class="small-container">
+                <h2 class="h2-100px">2</h2>
+                <div class="title-and-paragraph-container">
+                  <h3 class="title">Build</h3> 
+                  <p style="color: #6f6f6f;">Establish a global fan base as your story gains readership and momentum. Connect with other like-minded writers through storytelling.</p>
+                </div>             
+              </div>
+              <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="orange-img2">
+                <div>
+                  <div class="numbers">90 MILLION</div>
+                  <div class="type">Readers</div>
+                </div>
+              </div>               
+            </div>
+            <div class="one-container"">
+              <div class="small-container">
+                <h2 class="h2-100px">3</h2>
+                <div class="title-and-paragraph-container">
+                  <h3 class="title">Amplify</h3> 
+                  <p style="color: #6f6f6f;">Gain Wattpad Star status and get your story published or adapted into film or television with Wattpad Books and Wattpad Studios!</p>
+                </div>             
+              </div>
+              <div class="dot-container">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+              </div>
+              <div class="orange-img3">
+                <div>
+                  <div class="numbers">1000+</div>
+                  <div class="type">Story deals</div>
+                </div>
+              </div>                  
+            </div>         
+          </div>
+        </div>
+      </section>
+      <!-- SwiperJS Starts -->
+      <section class="swiper-js">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="img/white-stag.png"> 
+              <div class="para">
+                <p class="para1">Working with Wattpad Studios is like a dream. Not only do they care about your success, but also staying true to your vision.</p>
+                <p class="para2"> &#x2014; KARA BARBIERI (@PANDEAN)</p>
+                <p class="para3">Kara Barbieri is a twenty-two year old author with a love for the weird and mystic. Her debut novel, WHITE STAG, will be published by Wednesday Books/Macmillan in January 2019.</p>
+                <a href="https://www.wattpad.com/story/80479-my-life-with-the-walter-boys-wattpad-version" target="_blank">   
+                    <button>Start Reading</button>  
+                </a>
+              </div>        
+            </div>
+            <div class="swiper-slide">
+              <img src="img/walter-boys.png">
+              <div class="para">
+                <p class="para1">When I joined Wattpad, I gained a second family who were as passionate about reading and writing as I am.</p>
+                <p class="para2">&#x2014; ALI NOVAK (@FALLZSWIMMER)</p>
+                <p class="para3">Ali Novak is a Wisconsin native and a graduate of the University of Wisconsin-Madison's creative writing program. She started writing her debut novel My Life with the Walter Boys when she was only fifteen. Since then, her work has received more than 150 million hits online and My Life with the Walter Boys has been optioned for television by Komixx Entertainment and Sony Pictures Television.</p>
+                <button>Start Reading</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/black-eye.png">
+              <div class="para">
+                <p class="para1">Being a Wattpad Star is the foundation for everything I do as a writer, from the behind the scenes wrangling to the big, game-changing projects.</p>
+                <p class="para2">&#x2014; BEN SOBIECK (@BENSOBIECK)</p>
+                <p class="para3">Benjamin Sobieck is a Wattpad Star and editor of “The Writer’s Guide to Wattpad,” published in August 2018 by Writer’s Digest Books and featuring contributions by 23 Wattpad Stars, ambassadors, and staff. His stories on Wattpad, such as “When the Black-Eyed Children Knock,” have drawn more than 1.5 million reads.</p>
+                <button>Start Reading</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/feather.png">
+              <div class="para">
+                <p class="para1">Having been active on Wattpad for several  years, I knew it would be the perfect platform for a thriller with lots of cliffhangers for readers to discuss. Teen horror is my passion, so I can’t wait to be able to share Light as a Feather with other horror aficionados on Hulu.</p>
+                <p class="para2">&#x2014; ZOE AARSEN (@ZAARSENIST)</p>
+                <p class="para3">Zoe Aarsen is a graphic designer and copywriter. Her first paranormal YA novel, Light as a Feather, Stiff as a Board, is being published by Simon & Schuster and turned into a television series on Hulu.</p>
+                <button>Start Reading</button>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img src="img/chasing-red.png">
+              <div class="para">
+                <p class="para1">The Wattpad Stars Program gave me opportunities I never thought possible. It connected me to a world that I had only imagined. I don’t know how else to say it. It changed my life!</p>
+                <p class="para2">&#x2014; ISABELLE RONIN (@ISABELLERONIN)</p>
+                <p class="para3">Chasing Red was one of 2016’s most-read stories on Wattpad -- and that was just the beginning for this Winnipeg-Manitoba-based writer. In a single year, her explosive hit has racked up over 127 million reads on Wattpad. Newly edited and expanded, the book was split into two and hit bookstore shelves in 2017.</p>
+                <button>Start Reading</button>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          <div class="swiper-button-next"> <img src="img/next-btn.svg"> </div>
+        </div>
+      </section>
+      <!-- swiperJS Ends-->
+      <section class="get-discovered">
+        <div class="get-discovered-container">
+          <h3>Get Discovered</h3>
+          <div class="book-choices">
+            <div class="books"> 
+              <img src="img/writing-contests.png " class="books-after" alt="Writing Contest"> 
+              <div class="info" id="writing-contest">
+                <h4>Writing Contests</h4>
+                <p>Enter writing contests to get published, win awards, and partner with global brands.</p>
+              </div>
+            </div>
+            <div class="books"> 
+              <img src="img/wattys_avatar.png " class="books-after" alt="Writing Contest"> 
+              <div class="info" id="the-wattys">
+                <h4>The Wattys</h4>
+                <p>Wattpad's annual awards program commited to celebrating the best stories around the world.</p>
+              </div>
+            </div>
+            <div class="books"> 
+              <img src="img/wp-picks.png " class="books-after" alt="Writing Contest"> 
+              <div class="info" id="wattpad-picks">
+                <h4>Wattpad Picks</h4>
+                <p>Get featured on out hand-picked reading list.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bg-section">    
+        <div class="bg-section-container">
+          <h3>Take Wattpad With You</h3>
+          <p>Read and write anywhere, even offline.</p>
+          <div style="margin-bottom: 50px;">
+            <button class="button1">Start Reading</button>
+            <button class="button2">Start Writing</button>
+          </div>
+          <img src="img/footer-devices.png" alt="footer device image" width="1140">
+        </div>
+      </section> 
+    </main>
+    <footer>
+      <ul class="footer-container1">
+        <li> <a href="https://www.wattpad.com/paidstories/">Paid Stories</a> </li>
+        <li> <a href="https://www.wattpad.com/premium/">Try Premium</a> </li>
+        <li> <a href="https://www.wattpad.com/getmobile">Get the App</a> </li>
+        <li> <a href="https://www.wattpad.com/settings/language?jq=true">Language</a> </li>
+        <li> <a href="https://creators.wattpad.com/">Writers</a> </li>
+        <li> <a href="#" id="vertical-line">|</a> </li>
+        <li> <a href="https://business.wattpad.com/">Business</a> </li>
+        <li> <a href="https://company.wattpad.com/work-at-wattpad">Jobs</a> </li>
+        <li> <a href="https://company.wattpad.com/press">Press</a> </li>
+      </ul>
+      <ul class="footer-container2">
+        <li> <a href="https://policies.wattpad.com/terms/">Terms</a> </li>
+        <li> <a href="https://policies.wattpad.com/privacy">Privacy</a> </li>
+        <li> <a href="https://policies.wattpad.com/accessibility">Accessibility</a> </li>
+        <li> <a href="https://support.wattpad.com/hc/en-us">Help</a> </li>
+        <li> <a href="#" id="copyright">© 2023 Wattpad</a> </li>
+      </ul>
+    </footer>
+   
+    
+    
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script src="swiper.js"></script>
+  </body>
+</html>
+
