@@ -204,12 +204,6 @@
   main, .section {
     background: none;
   }
-  main,
-  header {
-    width: 100%;
-    overflow: hidden;
- 
-  }
   header {   
     margin: 0px 120px;
     padding: 0px 10px;
@@ -269,11 +263,6 @@
 
 
 @media screen and (max-width: 1496px) {
-  main,
-  header {
-    overflow: hidden;
-    width: 100%;
-  } 
   .book-choices {
     justify-content: space-between;
   }
