@@ -64,152 +64,226 @@
 
 
 @media screen and (max-width: 1200px) {
-   main,section {
+     main,section {
+      background: none;
+     }
+     main {
+      padding: 0;
+     }
+     section,
+     footer,
+     .logo-container,
+     .logo,
+     .my-nav {
+      display: none;
+     }
+     .my-nav,
+     .ul-container {
+      position: fixed;
+     }
+     header {
+      margin: 0;
+      padding: 0;
+     }
+     header, .responsive-nav {
+      height: 44px;
+     }
+     .responsive-nav,
+     .responsive-container {
+      display: block;
+    }
+    .responsive-container {
+      text-align: center;
+      padding: 0px 10px;
+    }
+    .res-headline {
+      margin-top: 30px;
+
+    }
+    .res-headline p{
+      margin: 6px 0px 12px;
+      font-size: 16px;
+    }
+    .sign-up-form h1 {
+      margin: 8px 0px 0px;
+      font-size: 20px;
+    }
+    .panel-body {
+      padding: 12px 33px 20px;
+    }
+    .sub {
+      margin: 8px 0px 6px;
+      padding: 0px 40px;
+      font-size: 12px;
+    }
+    .OR3 {
+      margin: 8px 0px;
+      display: flex;
+      align-items: center;
+      font-size: 12px;
+    }
+    .OR3 hr {
+      margin: 0px 20px 0px 20px;
+      width: 48%;
+      height: 1px;
+      border: 1px solid #f2f2f2;
+    }
+    .headline-logo {
+      width: 154px;
+    }
+    .panel-body button {
+      width: 100%;
+      height: 44px;
+      margin: 8px 5px 0px;
+      padding: 5px 0px;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .panel-body button i,
+    .panel-body button img {
+      margin-right: 8px;
+    }
+    .row-pic{
+      display: block;
+      background-image: url(img/wattpad-wall.png);
+      background-size: 100% 80%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100%;
+      text-align: center;
+
+    }
+    .row-pic h3{
+      padding-top: 70px;
+      color: #fff;
+    }
+    .footer-devicess {
+      margin: 30px 0px -40px 0px;
+    }
+
+    .display-none-footer {
+      display: flex;
+      align-items: start;
+    }
+    .socials {
+      margin: 78px 0px 18px;
+    }
+    .socials img {
+      margin-left: 15px;
+    }
+    .display-none-links {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: start;
+      width: 100px;
+      margin: 0px 0px 0px 60px;
+      font-size: 14px;
+
+    }
+    .display-none-links a {
+      color: #222;
+      text-decoration: none;
+      font-weight: 600;
+
+    }
+    .lang-container {
+      margin-left: 90px;
+    }
+    .display-none-links a ,
+    .display-none-links h5 {
+      margin: 12px 0px;
+    }
+  }
+
+@media only screen and (min-width: 1201px) and (max-width: 1496px) {
+  main, .section {
     background: none;
-   }
-   main {
-    padding: 0;
-   }
-   section,
-   footer,
-   .logo-container,
-   .logo,
-   .my-nav {
-    display: none;
-   }
-   .my-nav,
-   .ul-container {
-    position: fixed;
-   }
-   header {
-    margin: 0;
-    padding: 0;
-   }
-   header, .responsive-nav {
-    height: 44px;
-   }
-   .responsive-nav,
-   .responsive-container {
-    display: block;
   }
-  .responsive-container {
-    text-align: center;
-    padding: 0px 10px;
-  }
-  .res-headline {
-    margin-top: 30px;
+  main,
+  header {
+    width: 100%;
+    overflow: hidden;
  
   }
-  .res-headline p{
-    margin: 6px 0px 12px;
-    font-size: 16px;
+  header {   
+    margin: 0px 120px;
+    padding: 0px 10px;
   }
-  .sign-up-form h1 {
-    margin: 8px 0px 0px;
-    font-size: 20px;
-  }
-  .panel-body {
-    padding: 12px 33px 20px;
-  }
-  .sub {
-    margin: 8px 0px 6px;
-    padding: 0px 40px;
-    font-size: 12px;
-  }
-  .OR3 {
-    margin: 8px 0px;
-    display: flex;
-    align-items: center;
-    font-size: 12px;
-  }
-  .OR3 hr {
-    margin: 0px 20px 0px 20px;
-    width: 48%;
-    height: 1px;
-    border: 1px solid #f2f2f2;
-  }
-  .headline-logo {
-    width: 154px;
-  }
-  .panel-body button {
+  .search-input {
     width: 100%;
-    height: 44px;
-    margin: 8px 5px 0px;
-    padding: 5px 0px;
-    border-radius: 50px;
+  }
+  .my-nav ul li {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 12px;
-    font-weight: 600;
   }
-  .panel-body button i,
-  .panel-body button img {
-    margin-right: 8px;
+  .my-nav ul li span {
+    margin-left: 3px;
   }
-  .row-pic{
-    display: block;
-    background-image: url(img/wattpad-wall.png);
-    background-size: 100% 80%;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100%;
-    text-align: center;
-    
+  .content-container {
+    margin: 0px 120px;
   }
-  .row-pic h3{
-    padding-top: 70px;
-    color: #fff;
+  .wattpad-book-container {
+    margin: 110px 152px 0px;
   }
-  .footer-devicess {
-    margin: 30px 0px -40px 0px;
+  .wattpad-studios-container {
+    margin: 80px 120px 0px;
+    padding: 0px 10px;
+  }
+  .margin {
+    margin: 0px 120px;
+    padding-left: 0px 10px;
+  }
+  .wattpad-image1 {
+    left: 100%;
+    top: 10%;
+    width: 480px;
+    height: 300px;
   }
 
-  .display-none-footer {
-    display: flex;
-    align-items: start;
-  }
-  .socials {
-    margin: 78px 0px 18px;
-  }
-  .socials img {
-    margin-left: 15px;
-  }
-  .display-none-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: start;
-    width: 100px;
-    margin: 0px 0px 0px 60px;
-    font-size: 14px;
-
-  }
-  .display-none-links a {
-    color: #222;
-    text-decoration: none;
-    font-weight: 600;
+  .book-choices {
     
+    justify-content: center;
   }
-  .lang-container {
-    margin-left: 90px;
+  .get-discovered-container {
+    margin-left: 0;
+    margin-right: 0;
   }
-  .display-none-links a ,
-  .display-none-links h5 {
-    margin: 12px 0px;
-  }
+
   
-    
-
-   
-   
-   
-   
-    
-   
-    
-
+  .footer-device-image {
+    width: 100%;
   }
+  .whole-container-of-three {
+    justify-content: center;
+  }
+  .bg-section {
+    background: cover;
+    background-size: 100%;
+  }  
+}
+
+
+@media screen and (max-width: 1496px) {
+  main,
+  header {
+    overflow: hidden;
+    width: 100%;
+  } 
+  .book-choices {
+    justify-content: space-between;
+  }
+  .get-discovered-container{
+    margin: 0 auto;
+  }
+  .get-discovered-container h3 {
+    text-align: start;
+  }
+}
   
   
   
